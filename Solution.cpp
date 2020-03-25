@@ -246,3 +246,79 @@ std::string Solution::longestPalindrome(std::string s)
 	}
 	return 0;
 }
+
+
+/*
+The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+
+P   A   H   N
+A P L S I I G
+Y   I   R
+
+And then read line by line: "PAHNAPLSIIGYIR"
+
+Write the code that will take a string and make this conversion given a number of rows:
+
+string convert(string s, int numRows);
+
+Example 1:
+
+Input: s = "PAYPALISHIRING", numRows = 3
+Output: "PAHNAPLSIIGYIR"
+
+Example 2:
+
+Input: s = "PAYPALISHIRING", numRows = 4
+Output: "PINALSIGYAHRPI"
+Explanation:
+
+P     I    N
+A   L S  I G
+Y A   H R
+P     I
+
+*/
+
+std::string Solution::convert(std::string s, int numRows)
+{
+	std::string result;
+	result = "";
+	//zmienna ktora mowi gdzie sie aktualnie znajduje
+	int place = 0;
+	int temp = 0;
+	if (numRows == 1)
+	{
+		return s;
+	}
+	else
+	{
+		for (int i = 0; i < numRows; i++)
+		{
+			if (i == 0 || i == (numRows)-1)
+			{
+				while (place < s.length())
+				{
+					result.push_back(s[place]);
+					place += (2 * (numRows - 1));
+				}
+			}
+			else
+			{
+				while (place < s.length())
+				{
+					result.push_back(s[place]);
+					if ((place + (2 * (numRows - 1)) - temp) < s.length())
+					{
+						result.push_back(s[place + (2 * (numRows - 1)) - temp]);
+					}
+					place += (2 * (numRows - 1));
+				}
+			}
+			place = i + 1;
+			temp += 2;
+		}
+	}
+	return result;
+}
+
+

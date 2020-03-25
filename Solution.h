@@ -23,4 +23,6 @@ public:
 	float findMedianSortedArrays(std::vector<int> nums1, std::vector<int> nums2);
 	//number 5
 	std::string longestPalindrome(std::string s);
+	//number 6
+	std::string convert(std::string s, int numRows);
 };
