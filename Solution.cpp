@@ -1,4 +1,4 @@
-#include "Solution.h"
+﻿#include "Solution.h"
 //number 1
 /*
 Given an array of integers, return INDICES of the two numbers such
@@ -322,3 +322,136 @@ std::string Solution::convert(std::string s, int numRows)
 }
 
 
+/*
+Given a 32-bit signed integer, reverse digits of an integer.
+
+Example 1:
+
+Input: 123
+Output: 321
+
+Example 2:
+
+Input: -123
+Output: -321
+
+Example 3:
+
+Input: 120
+Output: 21
+
+Note:
+Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
+*/
+
+int Solution::reverse(int x) {
+	int result = 0;
+	int ok = 0;
+	int temp_x = -1*x;
+	std::string str_x = std::to_string(temp_x);
+	std::string temp = "";
+	
+	for (int i = (str_x.length() - 1); i >= 0; i--)
+	{
+		if(str_x[i] == '0' && ok == 0)
+		{
+			continue;
+		}
+			ok = 1;
+			temp.push_back(str_x[i]);
+	}
+	result = std::stoi(temp);
+	result *= x / abs(x);
+	if ((result < 0 && x > 0) || (result > 0 && x < 0))
+	{
+		return 0;
+	}
+	return result;
+}
+
+/*Implement atoi which converts a string to an integer.
+
+The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.
+
+The string can contain additional characters after those that form the integral number, which are ignored and have no effect on the behavior of this function.
+
+If the first sequence of non-whitespace characters in str is not a valid integral number, or if no such sequence exists because either str is empty or it contains only whitespace characters, no conversion is performed.
+
+If no valid conversion could be performed, a zero value is returned.*/
+
+
+//45 -
+//48 <= 57 0-9
+int Solution::myAtoi(std::string str) {
+	int result = 0;
+	int sign = 1;
+	bool is_number = false;
+	for (char& c : str)
+	{
+
+		if (c == ' ' && is_number == false)
+		{
+			continue;
+		}
+		else if (!((c >= 48 && c <= 57) || c == 45 || c == '+') && is_number == false)
+		{
+			return 0;
+		}
+		else if (c == '-' && is_number == false)
+		{
+			sign = -1;
+			is_number = true;
+		}
+		else if (c == '+' && is_number == false)
+		{
+			sign = 1;
+			is_number = true;
+		}
+		else if ((!((c >= 48 && c <= 57))) && is_number == true)
+		{
+			break;
+		}
+		else if ((c >= 48 && c <= 57))
+		{
+			is_number = true;
+
+			if (sign * result > 214748364)
+			{
+				if (sign == -1)
+				{
+					return (-2147483647) - 1;
+				}
+				return  2147483647;
+			}
+			else if (sign * result == 214748364)
+			{
+				if (c >= '7' && sign == 1)
+				{
+					return 2147483647;
+				}
+				else if (c >= '8' && sign == -1)
+				{
+					return (-2147483647) - 1;
+				}
+			}
+			result = result * 10 + sign * (c - 48);
+		}
+
+		if (result > 0 && sign == -1)
+		{
+			return (-2147483647) - 1;
+		}
+		if (result < 0 && sign == 1)
+		{
+			return 2147483647;
+		}
+
+
+
+
+	}
+
+
+	return result;
+
+}

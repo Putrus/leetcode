@@ -5,8 +5,12 @@
 int main()
 {
 	Solution solution;
-	std::vector<int> nums1{ 1,2 };
-	std::vector<int> nums2{ 3,4 };
-	float x = solution.findMedianSortedArrays(nums1, nums2);
-	std::cout<<solution.convert("AB", 1);
+	
+	std::string s = "kr wa";
+	
+
+	std::cout<<solution.myAtoi(" +0 123");
+	
+
+	
 }

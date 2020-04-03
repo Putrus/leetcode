@@ -25,4 +25,8 @@ public:
 	std::string longestPalindrome(std::string s);
 	//number 6
 	std::string convert(std::string s, int numRows);
+	//number 7
+	int reverse(int x);
+	//number 8
+	int myAtoi(std::string str);
 };
