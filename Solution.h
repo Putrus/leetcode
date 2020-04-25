@@ -29,4 +29,6 @@ public:
 	int reverse(int x);
 	//number 8
 	int myAtoi(std::string str);
+	//number 9
+	bool isPalindrome(int x);
 };

@@ -6,10 +6,7 @@ int main()
 {
 	Solution solution;
 	
-	std::string s = "kr wa";
-	
-
-	std::cout<<solution.myAtoi(" +0 123");
+	std::cout<< "\n" << solution.isPalindrome(1000030001);
 	
 
 	
