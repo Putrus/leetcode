@@ -472,7 +472,6 @@ Follow up:
 
 Coud you solve it without converting the integer to a string?
 */
-
 bool Solution::isPalindrome(int x) {
 
 	int i = 1000000000;
@@ -529,4 +528,269 @@ bool Solution::isPalindrome(int x) {
 	}
 	return true;
 
+}
+
+/*Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.
+
+'.' Matches any single character.
+'*' Matches zero or more of the preceding element.
+
+The matching should cover the entire input string (not partial).
+
+Note:
+
+    s could be empty and contains only lowercase letters a-z.
+    p could be empty and contains only lowercase letters a-z, and characters like . or *.
+
+Example 1:
+
+Input:
+s = "aa"
+p = "a"
+Output: false
+Explanation: "a" does not match the entire string "aa".
+
+Example 2:
+
+Input:
+s = "aa"
+p = "a*"
+Output: true
+Explanation: '*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".
+
+Example 3:
+
+Input:
+s = "ab"
+p = ".*"
+Output: true
+Explanation: ".*" means "zero or more (*) of any character (.)".
+
+Example 4:
+
+Input:
+s = "aab"
+p = "c*a*b"
+Output: true
+Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore, it matches "aab".
+
+Example 5:
+
+Input:
+s = "mississippi"
+p = "mis*is*p*."
+Output: false
+
+*/
+bool Solution::isMatch(std::string s, std::string p) {
+
+	
+	int j = 0;
+	char starSign = ' ';
+	for (int i = 0; i < s.length(); i++)
+	{
+		std::cout << "p[j] == " << p[j] << std::endl;
+		if (p[j+1] == '*')
+		{
+			starSign = p[j];
+			while (s[i] == starSign)
+			{
+				std::cout << "s[i] = " << s[i] << std::endl;
+				i++;
+			}
+			j+=2;
+		}
+		
+		
+	}
+	return true;
+}
+
+
+/*Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+
+Symbol       Value
+I             1
+V             5
+X             10
+L             50
+C             100
+D             500
+M             1000
+
+For example, two is written as II in Roman numeral, just two one's added together. Twelve is written as, XII, which is simply X + II. The number twenty seven is written as XXVII, which is XX + V + II.
+
+Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
+
+    I can be placed before V (5) and X (10) to make 4 and 9. 
+    X can be placed before L (50) and C (100) to make 40 and 90. 
+    C can be placed before D (500) and M (1000) to make 400 and 900.
+
+Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.
+
+Example 1:
+
+Input: "III"
+Output: 3
+
+Example 2:
+
+Input: "IV"
+Output: 4
+
+Example 3:
+
+Input: "IX"
+Output: 9
+
+Example 4:
+
+Input: "LVIII"
+Output: 58
+Explanation: L = 50, V= 5, III = 3.
+
+Example 5:
+
+Input: "MCMXCIV"
+Output: 1994
+Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
+
+*/
+int Solution::romanToInt(std::string s)
+{
+	int result = 0;
+	for (int i = 0; i < s.size(); i++)
+	{
+		if (i != s.size() - 1)
+		{
+			if (s[i] == 'I' && s[i + 1] == 'V')
+			{
+				result += 4;
+				i++;
+				continue;
+			}
+			if (s[i] == 'I' && s[i + 1] == 'X')
+			{
+				result += 9;
+				i++;
+				continue;
+			}
+			if (s[i] == 'X' && s[i + 1] == 'L')
+			{
+				result += 40;
+				i++;
+				continue;
+			}
+			if (s[i] == 'X' && s[i + 1] == 'C')
+			{
+				result += 90;
+				i++;
+				continue;
+			}
+			if (s[i] == 'C' && s[i + 1] == 'D')
+			{
+				result += 400;
+				i++;
+				continue;
+			}
+			if (s[i] == 'C' && s[i + 1] == 'M')
+			{
+				result += 900;
+				i++;
+				continue;
+			}
+		}
+		if (s[i] == 'I')
+		{
+			result += 1;
+			continue;
+		}
+		if (s[i] == 'V')
+		{
+			result += 5;
+			continue;
+		}
+		if (s[i] == 'X')
+		{
+			result += 10;
+		}
+		if (s[i] == 'L')
+		{
+			result += 50;
+			continue;
+		}
+		if (s[i] == 'C')
+		{
+			result += 100;
+			continue;
+		}
+		if (s[i] == 'D')
+		{
+			result += 500;
+			continue;
+		}
+		if (s[i] == 'M')
+		{
+			result += 1000;
+			continue;
+		}
+
+	}
+
+
+	return result;
+}
+
+/*Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".
+
+Example 1:
+
+Input: ["flower","flow","flight"]
+Output: "fl"
+
+Example 2:
+
+Input: ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+
+Note:
+
+All given inputs are in lowercase letters a-z.
+*/
+std::string Solution::longestCommonPrefix(std::vector<std::string>& strs)
+{
+	
+	std::string result = "";
+	if (strs.size() > 1 && strs[0]!="")
+	{
+		int charN = 0;
+		bool ok = true;
+
+		while (ok)
+		{
+			for (int i = 1; i < strs.size(); i++)
+			{
+				if (strs[0][charN] != strs[i][charN] || strs[0].length() <= charN || strs[i].length() <= charN)
+				{
+					ok = false;
+					break;
+				}
+			}
+			if (ok == false)
+			{
+				break;
+			}
+			result.push_back(strs[0][charN]);
+			charN++;
+		}
+	}
+	else if (strs.size() == 1)
+	{
+		result = strs[0];
+	}
+
+	return result;
 }

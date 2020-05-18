@@ -31,4 +31,12 @@ public:
 	int myAtoi(std::string str);
 	//number 9
 	bool isPalindrome(int x);
+	//number 10
+	bool isMatch(std::string s, std::string p);
+
+
+	//number 13
+	int romanToInt(std::string s);
+	//number 14
+	std::string longestCommonPrefix(std::vector<std::string>& strs);
 };
