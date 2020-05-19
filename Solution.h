@@ -3,12 +3,16 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <stack>
+#include <list>
 //to exercise number 2
 struct ListNode
 {
 	int val;
 	ListNode* next;
-	ListNode(int x) : val(x), next(NULL) {}
+	ListNode() : val(0), next(nullptr) {}
+	ListNode(int x) : val(x), next(nullptr) {}
+	ListNode(int x, ListNode* next) : val(x), next(next) {}
 };
 class Solution
 {
@@ -39,4 +43,9 @@ public:
 	int romanToInt(std::string s);
 	//number 14
 	std::string longestCommonPrefix(std::vector<std::string>& strs);
+
+	//number 20
+	bool isValid(std::string s);
+	//number 21
+	ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
 };

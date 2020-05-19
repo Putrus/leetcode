@@ -794,3 +794,97 @@ std::string Solution::longestCommonPrefix(std::vector<std::string>& strs)
 
 	return result;
 }
+
+/*Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+
+Note that an empty string is also considered valid.
+Example 1:
+
+Input: "()"
+Output: true
+
+Example 2:
+
+Input: "()[]{}"
+Output: true
+
+Example 3:
+
+Input: "(]"
+Output: false
+
+Example 4:
+
+Input: "([)]"
+Output: false
+
+Example 5:
+
+Input: "{[]}"
+Output: true
+*/
+
+
+bool Solution::isValid(std::string s)
+{
+	std::stack<char> stack;
+		for (int i = 0; i < s.length(); i++)
+		{
+			if (s[i] == '(' || s[i] == '{' || s[i] == '[')
+			{
+				stack.push(s[i]);
+			}
+			else if (s[i] == ')')
+			{
+				if (stack.empty() || stack.top() != '(')
+				{
+					return false;
+				}
+				stack.pop();
+			}
+			else if (s[i] == '}')
+			{
+				if (stack.empty() || stack.top() != '{')
+				{
+					return false;
+				}
+				stack.pop();
+			}
+			else if (s[i] == ']')
+			{
+				if (stack.empty() || stack.top() != '[')
+				{
+					return false;
+				}
+				stack.pop();
+			}
+		
+		}
+		return stack.empty();
+	
+}
+
+
+/*Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+
+Example:
+
+Input: 1->2->4, 1->3->4
+Output: 1->1->2->3->4->4
+*/
+ListNode* Solution::mergeTwoLists(ListNode* l1, ListNode* l2)
+{
+	ListNode* it1 = l1;
+	ListNode* it2 = l2;
+	ListNode* result = new ListNode(l1->val);
+	while (it1 != NULL && it2 != NULL)
+	{
+	}
+
+	return new ListNode(5);
+}
