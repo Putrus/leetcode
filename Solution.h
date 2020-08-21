@@ -37,15 +37,18 @@ public:
 	bool isPalindrome(int x);
 	//number 10
 	bool isMatch(std::string s, std::string p);
-
-
+	//number 11
+	int maxArea(std::vector<int>& height);
+	
 	//number 13
 	int romanToInt(std::string s);
 	//number 14
 	std::string longestCommonPrefix(std::vector<std::string>& strs);
-
+	//number 15
+	std::vector<std::vector<int>> threeSum(std::vector<int>& nums);
 	//number 20
 	bool isValid(std::string s);
 	//number 21
 	ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
+
 };

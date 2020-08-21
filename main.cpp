@@ -6,15 +6,28 @@ int main()
 {
 	Solution solution;
 
-	std::vector<std::string> str;
-	str.push_back("c");
-	str.push_back("c");
-	//str.push_back("float");
-	//std::cout << "\n" << solution.longestCommonPrefix(str);
 	
-	std::cout << "\n" << solution.isValid("]");
-	ListNode* node = new ListNode(5);
-	node->next = new ListNode(6);
-	node->next->next = new ListNode(7);
-	solution.mergeTwoLists(node, node);
+	std::vector<int> height;
+	height.push_back(-1);
+	height.push_back(0);
+	height.push_back(1);
+	height.push_back(2);
+	height.push_back(-1);
+	height.push_back(-4);
+	
+	std::vector<std::vector<int>> test = solution.threeSum(height);
+
+	
+	
+
+	/*for (int i = 0; i < result.size(); i++)
+	{
+		for (int j = 0; j < result[i].size(); j++)
+		{
+			std::cout << result[i][j] << " ";
+		}
+		std::cout << std::endl;
+	}
+	*/
+	return 0;
 }
