@@ -15,7 +15,7 @@ int main()
 	height.push_back(-1);
 	height.push_back(-4);
 	
-	std::vector<std::vector<int>> test = solution.threeSum(height);
+	std::cout << solution.countAndSay(5);
 
 	
 	

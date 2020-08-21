@@ -50,5 +50,6 @@ public:
 	bool isValid(std::string s);
 	//number 21
 	ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
-
+	//number 38
+	std::string countAndSay(int n);
 };
