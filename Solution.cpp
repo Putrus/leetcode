@@ -1071,3 +1071,15 @@ std::string Solution::countAndSay(int n)
 	}
 	return result;
 }
+
+
+
+
+
+
+std::vector<int> Solution::plusOne(std::vector<int>& digits) {
+
+	
+}
+
+

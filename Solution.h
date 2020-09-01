@@ -52,4 +52,7 @@ public:
 	ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
 	//number 38
 	std::string countAndSay(int n);
+
+	//number 66
+	std::vector<int> plusOne(std::vector<int>& digits);
 };
