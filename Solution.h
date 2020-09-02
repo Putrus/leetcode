@@ -52,6 +52,8 @@ public:
 	ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
 	//number 26
 	int removeDuplicates(std::vector<int>& nums);
+	//number 35
+	int searchInsert(std::vector<int>& nums, int target);
 	//number 38
 	std::string countAndSay(int n);
 

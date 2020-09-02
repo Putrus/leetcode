@@ -1051,7 +1051,7 @@ int Solution::removeDuplicates(std::vector<int>& nums)
 	{
 		for (int i = 0; i < nums.size() - 1; i++)
 		{
-			while (nums.size() > 1 && nums[i] == nums[i + 1])
+			while (i != nums.size()-1 && nums[i] == nums[i + 1])
 			{
 				nums.erase(nums.begin() + i + 1);
 			}
@@ -1062,6 +1062,23 @@ int Solution::removeDuplicates(std::vector<int>& nums)
 }
 
 
+int Solution::searchInsert(std::vector<int>& nums, int target)
+{
+	for (int i = 0; i < nums.size(); i++)
+	{
+		if (nums[i] == target)
+		{
+			return i;
+		}
+		if (nums[i] > target)
+		{
+			return i;
+		}
+	}
+	return nums.size();
+
+
+}
 
 
 
