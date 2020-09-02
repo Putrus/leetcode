@@ -8,26 +8,14 @@ int main()
 
 	
 	std::vector<int> height;
-	height.push_back(-1);
-	height.push_back(0);
 	height.push_back(1);
 	height.push_back(2);
-	height.push_back(-1);
-	height.push_back(-4);
-	
-	std::cout << solution.countAndSay(5);
+	height.push_back(2);
+	std::cout << solution.removeDuplicates(height);
 
 	
 	
 
-	/*for (int i = 0; i < result.size(); i++)
-	{
-		for (int j = 0; j < result[i].size(); j++)
-		{
-			std::cout << result[i][j] << " ";
-		}
-		std::cout << std::endl;
-	}
-	*/
+	
 	return 0;
 }

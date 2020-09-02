@@ -1045,6 +1045,25 @@ ListNode* Solution::mergeTwoLists(ListNode* l1, ListNode* l2)
 }
 
 
+int Solution::removeDuplicates(std::vector<int>& nums)
+{
+	if (nums.size() != 0)
+	{
+		for (int i = 0; i < nums.size() - 1; i++)
+		{
+			while (nums.size() > 1 && nums[i] == nums[i + 1])
+			{
+				nums.erase(nums.begin() + i + 1);
+			}
+
+		}
+	}
+	return nums.size();
+}
+
+
+
+
 
 
 std::string Solution::countAndSay(int n)
