@@ -56,7 +56,8 @@ public:
 	int searchInsert(std::vector<int>& nums, int target);
 	//number 38
 	std::string countAndSay(int n);
-
+	//number 58
+	int lengthOfLastWord(std::string s);
 	//number 66
 	std::vector<int> plusOne(std::vector<int>& digits);
 };
