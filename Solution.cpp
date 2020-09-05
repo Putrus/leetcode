@@ -1166,3 +1166,12 @@ std::vector<int> Solution::plusOne(std::vector<int>& digits) {
 }
 
 
+
+
+
+
+
+int Solution::rob(std::vector<int>& nums)
+{
+
+}
