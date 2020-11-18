@@ -8,7 +8,7 @@ int main()
 
 	
 	
-	std::cout << solution.lengthOfLastWord("  a     ");
+	std::cout << solution.addBinary("11", "1");
 
 	
 	

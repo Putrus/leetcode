@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <stack>
 #include <list>
+#include <cmath>
 //to exercise number 2
 struct ListNode
 {
@@ -60,4 +61,8 @@ public:
 	int lengthOfLastWord(std::string s);
 	//number 66
 	std::vector<int> plusOne(std::vector<int>& digits);
+	//number 67
+	std::string addBinary(std::string a, std::string b);
+	//number 198
+	int rob(std::vector<int>& nums);
 };
