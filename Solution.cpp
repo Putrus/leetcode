@@ -1062,6 +1062,20 @@ int Solution::removeDuplicates(std::vector<int>& nums)
 }
 
 
+int Solution::removeElement(std::vector<int>& nums, int val) {
+	for (int i = 0; i < nums.size(); i++)
+	{
+		if (nums[i] == val)
+		{
+			nums.erase(nums.begin() + i);
+			i = -1;
+		}
+	}
+
+
+	return (int)nums.size();
+}
+
 int Solution::searchInsert(std::vector<int>& nums, int target)
 {
 	for (int i = 0; i < nums.size(); i++)
@@ -1077,6 +1091,13 @@ int Solution::searchInsert(std::vector<int>& nums, int target)
 	}
 	return nums.size();
 
+
+}
+
+//to do
+bool isValidSudoku(std::vector<std::vector<char>>& board) {
+
+	return true;
 
 }
 

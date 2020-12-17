@@ -7,8 +7,12 @@ int main()
 	Solution solution;
 
 	
-	
-	std::cout << solution.addBinary("11", "1");
+	std::vector<int> k;
+	k.push_back(3);
+	k.push_back(2);
+	k.push_back(2);
+	k.push_back(3);
+	std::cout << solution.removeElement(k, 3);
 
 	
 	
