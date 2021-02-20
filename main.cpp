@@ -7,7 +7,7 @@ int main()
 	Solution solution;
 
 	
-	std::cout << solution.isMatch("aa", "a*b");
+	std::cout << solution.intToRoman(1994);
 
 	
 	

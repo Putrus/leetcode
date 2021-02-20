@@ -40,7 +40,8 @@ public:
 	bool isMatch(std::string s, std::string p);
 	//number 11
 	int maxArea(std::vector<int>& height);
-	
+	//number 12
+	std::string intToRoman(int num);
 	//number 13
 	int romanToInt(std::string s);
 	//number 14
