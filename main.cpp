@@ -6,8 +6,8 @@ int main()
 {
 	Solution solution;
 
-	
-	std::cout << solution.intToRoman(1994);
+	std::vector<int> v = {-1,2,1,-4};
+	std::cout << solution.threeSumClosest(v, 1);
 
 	
 	

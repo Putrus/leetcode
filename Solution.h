@@ -48,6 +48,8 @@ public:
 	std::string longestCommonPrefix(std::vector<std::string>& strs);
 	//number 15
 	std::vector<std::vector<int>> threeSum(std::vector<int>& nums);
+	//number 16
+	int threeSumClosest(std::vector<int>& nums, int target);
 	//number 20
 	bool isValid(std::string s);
 	//number 21
