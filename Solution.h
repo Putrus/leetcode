@@ -6,6 +6,7 @@
 #include <stack>
 #include <list>
 #include <cmath>
+#include <map>
 //to exercise number 2
 struct ListNode
 {
@@ -17,6 +18,9 @@ struct ListNode
 };
 class Solution
 {
+private:
+	//number 17
+	void backtrack(std::string combination, std::string nextNumbers, std::vector<std::string> & result, std::vector<std::string> phone);
 public:
 	//number 1
 	std::vector<int> twoSum(std::vector<int>& nums, int target);
@@ -50,6 +54,8 @@ public:
 	std::vector<std::vector<int>> threeSum(std::vector<int>& nums);
 	//number 16
 	int threeSumClosest(std::vector<int>& nums, int target);
+	//number 17
+	std::vector<std::string> letterCombinations(std::string digits);
 	//number 20
 	bool isValid(std::string s);
 	//number 21

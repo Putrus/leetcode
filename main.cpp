@@ -7,7 +7,8 @@ int main()
 	Solution solution;
 
 	std::vector<int> v = {-1,2,1,-4};
-	std::cout << solution.threeSumClosest(v, 1);
+	std::vector<std::string> k = solution.letterCombinations("23");
+	std::cout << k[2];
 
 	
 	
