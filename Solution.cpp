@@ -1232,7 +1232,7 @@ int Solution::strStr(std::string haystack, std::string needle){
 	}
 
 	for (size_t i = 0; i < haystack.size(); i++) {
-		if (haystack.size() - i <= needle.size()) {
+		if (haystack.size() - i >= needle.size()) {
 			bool ok = true;
 			for (size_t j = 0; j < needle.size(); j++) {
 				if (haystack[i + j] != needle[j]) {
@@ -1245,9 +1245,6 @@ int Solution::strStr(std::string haystack, std::string needle){
 			}
 		}
 	}
-
-
-
 	return -1;
 }
 
@@ -1456,4 +1453,18 @@ int Solution::rob(std::vector<int>& nums)
 	}
 	return temp[nums.size() - 1];
 
+}
+
+
+
+
+std::string shortestPalindrome(std::string s) {
+	std::string rev = s;
+	std::reverse(rev.begin(), rev.end());
+	for (size_t i = 0; i < s.size(); i++) {
+		if (s.substr(0, s.size()-i) == rev.substr(i)) {
+			return rev.substr(i) + s;
+		}
+	}
+	return "";
 }

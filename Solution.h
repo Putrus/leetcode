@@ -59,6 +59,7 @@ public:
 	//number 18
 	std::vector<std::vector<int>> fourSum(std::vector<int>& nums, int target);
 
+
 	//number 20
 	bool isValid(std::string s);
 	//number 21
@@ -67,6 +68,8 @@ public:
 	int removeDuplicates(std::vector<int>& nums);
 	//number 27
 	int removeElement(std::vector<int>& nums, int val);
+	//number 28
+	int strStr(std::string haystack, std::string needle);
 	//number 35
 	int searchInsert(std::vector<int>& nums, int target);
 	//number 36
@@ -82,4 +85,6 @@ public:
 	std::string addBinary(std::string a, std::string b);
 	//number 198
 	int rob(std::vector<int>& nums);
+	//214
+	std::string shortestPalindrome(std::string s);
 };
