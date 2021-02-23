@@ -56,6 +56,9 @@ public:
 	int threeSumClosest(std::vector<int>& nums, int target);
 	//number 17
 	std::vector<std::string> letterCombinations(std::string digits);
+	//number 18
+	std::vector<std::vector<int>> fourSum(std::vector<int>& nums, int target);
+
 	//number 20
 	bool isValid(std::string s);
 	//number 21
