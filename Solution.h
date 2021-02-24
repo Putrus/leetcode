@@ -85,6 +85,9 @@ public:
 	std::string addBinary(std::string a, std::string b);
 	//number 198
 	int rob(std::vector<int>& nums);
-	//214
+	//number 202
+	bool Solution::isHappy(int n);
+	//number 214
 	std::string shortestPalindrome(std::string s);
+	
 };
