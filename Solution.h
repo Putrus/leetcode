@@ -7,6 +7,7 @@
 #include <list>
 #include <cmath>
 #include <map>
+#include <unordered_set>
 //to exercise number 2
 struct ListNode
 {
@@ -92,4 +93,6 @@ public:
 	std::string shortestPalindrome(std::string s);
 	//number 217
 	bool containsDuplicate(std::vector<int>& nums);
+	//number 219
+	bool containsNearbyDuplicate(std::vector<int>& nums, int k);
 };
