@@ -5,46 +5,6 @@
 
 
 
-
-int Solution::removeElement(std::vector<int>& nums, int val) {
-	for (int i = 0; i < nums.size(); i++)
-	{
-		if (nums[i] == val)
-		{
-			nums.erase(nums.begin() + i);
-			i = -1;
-		}
-	}
-
-
-	return (int)nums.size();
-}
-
-
-
-int Solution::strStr(std::string haystack, std::string needle){
-	if (needle == "") {
-		return 0;
-	}
-
-	for (size_t i = 0; i < haystack.size(); i++) {
-		if (haystack.size() - i >= needle.size()) {
-			bool ok = true;
-			for (size_t j = 0; j < needle.size(); j++) {
-				if (haystack[i + j] != needle[j]) {
-					ok = false;
-					break;
-				}
-			}
-			if (ok) {
-				return i;
-			}
-		}
-	}
-	return -1;
-}
-
-
 int Solution::searchInsert(std::vector<int>& nums, int target)
 {
 	for (int i = 0; i < nums.size(); i++)
