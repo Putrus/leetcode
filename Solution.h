@@ -90,5 +90,6 @@ public:
 	bool isHappy(int n);
 	//number 214
 	std::string shortestPalindrome(std::string s);
-	
+	//number 217
+	bool containsDuplicate(std::vector<int>& nums);
 };
