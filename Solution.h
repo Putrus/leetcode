@@ -81,6 +81,10 @@ public:
 	std::string countAndSay(int n);
 	//number 58
 	int lengthOfLastWord(std::string s);
+	//number 62
+	int uniquePaths(int m, int n);
+	//number 63
+	int uniquePathsWithObstacles(std::vector<std::vector<int>>& obstacleGrid);
 	//number 66
 	std::vector<int> plusOne(std::vector<int>& digits);
 	//number 67
