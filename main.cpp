@@ -6,7 +6,7 @@ int main()
 {
 	Solution solution;
 
-	std::cout << solution.isHappy(2);
+	solution.twoSum({ 6,2 }, 8);
 
 	
 	

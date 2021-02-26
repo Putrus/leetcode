@@ -1,34 +1,5 @@
 ﻿#include "Solution.h"
-//number 1
-/*
-Given an array of integers, return INDICES of the two numbers such
-that they add up to specific target.
 
-You may assume that each input would have EXACTLY one solution, and
-you may not use the same element twice
-
-EXAMPLE:
-
-Given nums = [2, 7, 11, 15], target = 9,
-
-Because nums[0] + nums[1] = 2 + 7 = 9,
-return [0,1].
-*/
-std::vector<int> Solution::twoSum(std::vector<int>& nums, int target)
-{
-for (int i = 0; i < nums.size() - 1; i++)
-{
-	for (int j = i + 1; j < nums.size(); j++)
-	{
-		if ((nums[i] + nums[j]) == target)
-		{
-			std::cout << "Result = [" << i << ", " << j << "]\n";
-			return { i,j };
-		}
-	}
-}
-throw std::invalid_argument("No two sum solution");
-}
 //number 2
 /*
 You are given two NON-EMPTY linked lists representing two
