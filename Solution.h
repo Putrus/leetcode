@@ -95,4 +95,6 @@ public:
 	bool containsDuplicate(std::vector<int>& nums);
 	//number 219
 	bool containsNearbyDuplicate(std::vector<int>& nums, int k);
+	//number 299
+	std::string getHint(std::string secret, std::string guess);
 };
