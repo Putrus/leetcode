@@ -1,44 +1,5 @@
 ﻿#include "Solution.h"
-/*There are two sorted arrays nums1 and nums2 of size m and n respectively.
 
-Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
-
-You may assume nums1 and nums2 cannot be both empty.
-
-Example 1:
-
-nums1 = [1, 3]
-nums2 = [2]
-
-The median is 2.0
-
-Example 2:
-
-nums1 = [1, 2]
-nums2 = [3, 4]
-
-The median is (2 + 3)/2 = 2.5
-
-*/
-
-float Solution::findMedianSortedArrays(std::vector<int> nums1, std::vector <int> nums2)
-{
-	if (nums1.size() != 0 || nums2.size() != 0)
-	{
-		nums1.insert(nums1.begin(), nums2.begin(), nums2.end());
-		sort(nums1.begin(), nums1.end());
-
-	if (nums1.size() % 2 != 0)
-	{
-		return float(nums1[nums1.size() / 2]);
-	}
-	else
-	{
-		return (float(nums1[nums1.size() / 2] + nums1[nums1.size() / 2 - 1]) / 2);
-	}
-	}
-	return 0;
-}
 
 /*
 Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
@@ -55,49 +16,7 @@ Input: "cbbd"
 Output: "bb"
 */
 
-std::string Solution::longestPalindrome(std::string s)
-{
-	if (s.length() <= 1000)
-	{
-		int len = s.length();
-		int max = 1;
-		int l, r, start = 0;
-		std::string result = "";
-		for (int i = 1; i < len; i++)
-		{
-			l = i - 1;
-			r = i;
-			while (l>=0 && r<len && s[l] == s[r]) 
-			{
-				if (r - l + 1 > max)
-				{
-					max = r - l + 1;
-					start = l;
-				}
-				l--;
-				r++;
-			}
-			
 
-			l = i - 1;
-			r = i + 1;
-			while (l >= 0 && r < len && s[l] == s[r]) {
-				if (r - l + 1 > max) {
-					max = r - l + 1;
-					start = l;
-				}
-				l--;
-				r++;
-			}
-		}
-		for (int k = start; k < start + max; k++)
-		{
-			result.push_back(s[k]);
-		}
-		return result;
-	}
-	return 0;
-}
 
 
 /*

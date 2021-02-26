@@ -1,7 +1,7 @@
 #include "Solution.h"
 //number 4
-//Runtime: 44 ms, faster than 35.57%
-//Memory usage: 7.5 MB, less than 80.83%
+//Runtime: 36 ms, faster than 65.75%
+//Memory usage: 89.3 MB, less than 59.75%
 
 float Solution::findMedianSortedArrays(std::vector<int> nums1, std::vector <int> nums2)
 {
