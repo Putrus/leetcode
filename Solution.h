@@ -16,6 +16,7 @@ struct ListNode
 	ListNode(int x) : val(x), next(nullptr) {}
 	ListNode(int x, ListNode* next) : val(x), next(next) {}
 };
+
 class Solution
 {
 private:
