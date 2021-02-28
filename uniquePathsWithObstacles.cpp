@@ -1,7 +1,7 @@
 #include "Solution.h"
 //number 63
 //Runtime: 0 ms, faster than 100.00%
-//Memory usage: 6.1 MB, less than 73.54%
+//Memory usage: 7.8 MB, less than 69.22%
 
 
 
