@@ -4,8 +4,12 @@
 int main()
 {
 	Solution solution;
-	std::vector<std::vector<int>> k = { {0,0,0},{0,1,0},{0,0,0} };
-	std::vector<std::vector<int>> l = { {1,0} };
-	std::cout << solution.uniquePathsWithObstacles(k);
+	TreeNode* p2 = new TreeNode(2);
+	TreeNode* p3 = new TreeNode(3);
+	TreeNode* p1 = new TreeNode(1, p2, p3);
+	TreeNode* q2 = new TreeNode(2);
+	TreeNode* q3 = new TreeNode(3);
+	TreeNode* q1 = new TreeNode(1, q2, q3);
+	std::cout << solution.isSameTree(p1, q1);
 	return 0;
 }

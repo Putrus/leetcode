@@ -18,6 +18,17 @@ struct ListNode
 	ListNode(int x, ListNode* next) : val(x), next(next) {}
 };
 
+//to exercise number 100
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
+
 class Solution
 {
 private:
@@ -89,6 +100,8 @@ public:
 	std::vector<int> plusOne(std::vector<int>& digits);
 	//number 67
 	std::string addBinary(std::string a, std::string b);
+	//number 100
+	bool isSameTree(TreeNode* p, TreeNode* q);
 	//number 198
 	int rob(std::vector<int>& nums);
 	//number 202
