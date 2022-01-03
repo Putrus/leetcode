@@ -12,14 +12,5 @@ bool Solution::isSameTree(TreeNode* p, TreeNode* q) {
       (q->right == nullptr && p->right != nullptr)) {
       return false;
    }
-   if (p->left != nullptr && p->right != nullptr) {
-      return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
-   }
-   else if (p->left != nullptr) {
-      return isSameTree(p->left, q->left);
-   }
-   else if (p->right != nullptr) {
-      return isSameTree(p->right, q->right);
-   }
-   return true;
+   return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
 }
