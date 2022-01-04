@@ -102,6 +102,8 @@ public:
 	std::string addBinary(std::string a, std::string b);
 	//number 100
 	bool isSameTree(TreeNode* p, TreeNode* q);
+	//number 108
+	TreeNode* sortedArrayToBST(std::vector<int>& nums);
 	//number 198
 	int rob(std::vector<int>& nums);
 	//number 202
@@ -118,4 +120,6 @@ public:
 	int nthUglyNumber(int n);
 	//number 299
 	std::string getHint(std::string secret, std::string guess);
+	//number 997
+	int findJudge(int n, std::vector<std::vector<int>>& trust);
 };

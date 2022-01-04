@@ -4,12 +4,11 @@
 int main()
 {
 	Solution solution;
-	TreeNode* p2 = new TreeNode(2);
-	TreeNode* p3 = new TreeNode(3);
-	TreeNode* p1 = new TreeNode(1, p2, p3);
-	TreeNode* q2 = new TreeNode(2);
-	TreeNode* q3 = new TreeNode(3);
-	TreeNode* q1 = new TreeNode(1, q2, q3);
-	std::cout << solution.isSameTree(p1, q1);
+	std::vector<int> nums = { -10, -3, 0, 5, 9 };
+	std::vector<int> nums2 = { 0, 1, 2, 3, 4, 5 };
+	std::vector<int> num3 = { 1,3 };
+	//3,1,5,0,2,4
+
+	solution.sortedArrayToBST(num3);
 	return 0;
 }
