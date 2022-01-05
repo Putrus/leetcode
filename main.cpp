@@ -9,6 +9,6 @@ int main()
 	std::vector<int> num3 = { 1,3 };
 	//3,1,5,0,2,4
 
-	solution.sortedArrayToBST(num3);
+	std::cout << solution.climbStairs(2);
 	return 0;
 }

@@ -100,6 +100,9 @@ public:
 	std::vector<int> plusOne(std::vector<int>& digits);
 	//number 67
 	std::string addBinary(std::string a, std::string b);
+	//number 70
+	int climbStairs(int n);
+	void recursion(int& val, int& n, int currVal);
 	//number 100
 	bool isSameTree(TreeNode* p, TreeNode* q);
 	//number 108
