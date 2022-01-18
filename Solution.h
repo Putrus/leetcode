@@ -117,6 +117,8 @@ public:
 	bool containsDuplicate(std::vector<int>& nums);
 	//number 219
 	bool containsNearbyDuplicate(std::vector<int>& nums, int k);
+	//number 242
+	bool isAnagram(std::string s, std::string t);
 	//number 263
 	bool isUgly(int num);
 	//number 264
