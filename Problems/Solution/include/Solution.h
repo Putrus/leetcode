@@ -15,4 +15,7 @@ public:
 
    //3. Longest Substring Without Repeating Characters
    int lengthOfLongestSubstring(std::string s);
+
+   //4. Median of Two Sorted Arrays
+   double findMedianSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2);
 };
