@@ -1,4 +1,4 @@
-#include "../../../include/Solution.h"
+#include "../../Solution/include/Solution.h"
 
 /*
 Runtime: 355 ms, faster than 33.65% of C++ online submissions for Two Sum.

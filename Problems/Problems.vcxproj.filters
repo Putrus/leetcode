@@ -15,18 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
+    <ClCompile Include="Solution\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\easy\0001\twoSum.cpp">
+    <ClCompile Include="Easy\0001\twoSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\0002\addTwoNumbers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Structs\src\ListNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Solution.h">
+    <ClInclude Include="Solution\include\Solution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Structs.h">
+    <ClInclude Include="Structs\include\ListNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

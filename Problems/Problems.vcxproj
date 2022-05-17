@@ -147,12 +147,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\easy\0001\twoSum.cpp" />
-    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="Easy\0001\twoSum.cpp" />
+    <ClCompile Include="Easy\0002\addTwoNumbers.cpp" />
+    <ClCompile Include="Structs\src\ListNode.cpp" />
+    <ClCompile Include="Solution\src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Solution.h" />
-    <ClInclude Include="include\Structs.h" />
+    <ClInclude Include="Structs\include\ListNode.h" />
+    <ClInclude Include="Solution\include\Solution.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

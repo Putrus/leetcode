@@ -1,4 +1,4 @@
-#include "../../../Problems/include/Solution.h"
+#include "../../../Problems/solution/include/Solution.h"
 
 #include "CppUnitTest.h"
 
