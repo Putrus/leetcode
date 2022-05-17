@@ -21,5 +21,8 @@
     <ClCompile Include="src\0002\addTwoNumbersTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\0003\lengthOfLongestSubstringTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

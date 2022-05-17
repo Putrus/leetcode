@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClCompile Include="Easy\0001\twoSum.cpp" />
     <ClCompile Include="Easy\0002\addTwoNumbers.cpp" />
+    <ClCompile Include="Easy\0003\lengthOfLongestSubstring.cpp" />
     <ClCompile Include="Structs\src\ListNode.cpp" />
     <ClCompile Include="Solution\src\main.cpp" />
   </ItemGroup>

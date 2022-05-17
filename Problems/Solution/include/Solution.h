@@ -3,6 +3,7 @@
 #include "../../Structs/include/ListNode.h"
 
 #include <vector>
+#include <string>
 
 class Solution {
 public:
@@ -11,4 +12,7 @@ public:
 
 	//2. Add Two Numbers
 	ListNode* addTwoNumbers(ListNode* l1, ListNode* l2);
+
+   //3. Longest Substring Without Repeating Characters
+   int lengthOfLongestSubstring(std::string s);
 };
