@@ -33,6 +33,9 @@
     <ClCompile Include="Easy\0004\findMedianSortedArrays.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Easy\0005\longestPalindrome.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution\include\Solution.h">

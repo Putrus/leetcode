@@ -18,4 +18,7 @@ public:
 
    //4. Median of Two Sorted Arrays
    double findMedianSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2);
+
+   //5. Longest Palindromic Substring
+   std::string longestPalindrome(std::string s);
 };
