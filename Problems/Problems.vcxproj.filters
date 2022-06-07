@@ -21,19 +21,22 @@
     <ClCompile Include="Easy\0001\twoSum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Easy\0002\addTwoNumbers.cpp">
+    <ClCompile Include="Medium\0002\addTwoNumbers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Structs\src\ListNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Easy\0003\lengthOfLongestSubstring.cpp">
+    <ClCompile Include="Medium\0003\lengthOfLongestSubstring.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Easy\0004\findMedianSortedArrays.cpp">
+    <ClCompile Include="Hard\0004\findMedianSortedArrays.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Easy\0005\longestPalindrome.cpp">
+    <ClCompile Include="Medium\0005\longestPalindrome.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Medium\0006\convert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

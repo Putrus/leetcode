@@ -15,16 +15,13 @@ namespace Problems
 
 			TEST_METHOD(Example1)
 			{
-				std::vector<int> nums1 = { 1, 3 };
-				std::vector<int> nums2 = { 2 };
-				Assert::AreEqual(solution.findMedianSortedArrays(nums1, nums2), 2.0);
+				std::string result = solution.longestPalindrome("babad");
+				Assert::IsTrue(result == "bab" || result == "aba");
 			}
 
 			TEST_METHOD(Example2)
 			{
-				std::vector<int> nums1 = { 1, 2 };
-				std::vector<int> nums2 = { 3, 4 };
-				Assert::AreEqual(solution.findMedianSortedArrays(nums1, nums2), 2.5);
+				Assert::IsTrue(solution.longestPalindrome("cvvd") == "bb");
 			}
 		};
 	}

@@ -21,4 +21,8 @@ public:
 
    //5. Longest Palindromic Substring
    std::string longestPalindrome(std::string s);
+
+   //6. Zigzag Conversion
+   std::string convert(std::string, int numRows);
+
 };
