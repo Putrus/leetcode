@@ -155,6 +155,7 @@
     <ClCompile Include="Easy\0002\addTwoNumbers.cpp" />
     <ClCompile Include="Easy\0003\lengthOfLongestSubstring.cpp" />
     <ClCompile Include="Easy\0004\findMedianSortedArrays.cpp" />
+    <ClCompile Include="Easy\0005\longestPalindrome.cpp" />
     <ClCompile Include="Structs\src\ListNode.cpp" />
     <ClCompile Include="Solution\src\main.cpp" />
   </ItemGroup>
