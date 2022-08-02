@@ -21,7 +21,7 @@ namespace Problems
 
 			TEST_METHOD(Example2)
 			{
-				Assert::IsTrue(solution.longestPalindrome("cvvd") == "bb");
+				Assert::IsTrue(solution.longestPalindrome("cbbd") == "bb");
 			}
 		};
 	}
