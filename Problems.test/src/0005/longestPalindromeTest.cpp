@@ -21,7 +21,14 @@ namespace Problems
 
 			TEST_METHOD(Example2)
 			{
-				Assert::IsTrue(solution.longestPalindrome("cbbd") == "bb");
+				std::string result = solution.longestPalindrome("cbbd");
+				Assert::IsTrue(result == "bb");
+			}
+
+			TEST_METHOD(Test1)
+			{
+				std::string result = solution.longestPalindrome("caba");
+				Assert::IsTrue(result == "aba");
 			}
 		};
 	}
