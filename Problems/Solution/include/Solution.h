@@ -28,4 +28,7 @@ public:
    //7. Reverse Integer
    int reverse(int x);
 
+   //8. String to integer (atoi)
+   int myAtoi(std::string s);
+
 };
