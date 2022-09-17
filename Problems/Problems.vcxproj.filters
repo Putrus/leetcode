@@ -45,6 +45,9 @@
     <ClCompile Include="Medium\0008\myAtoi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Easy\0009\isPalindrome.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution\include\Solution.h">

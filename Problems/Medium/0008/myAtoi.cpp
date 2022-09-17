@@ -6,7 +6,8 @@ Runtime: 4 ms, faster than 69.95% of C++ online submissions for String to Intege
 Memory Usage: 6.9 MB, less than 99.20% of C++ online submissions for String to Integer (atoi).
 */
 
-int Solution::myAtoi(std::string s) {
+int Solution::myAtoi(std::string s) 
+{
    long long result = 0;
    bool neg = false;
    bool pos = false;

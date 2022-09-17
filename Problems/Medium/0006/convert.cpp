@@ -6,7 +6,8 @@ Runtime: 7 ms, faster than 94.60% of C++ online submissions for Zigzag Conversio
 Memory Usage: 8.3 MB, less than 67.17% of C++ online submissions for Zigzag Conversion.
 */
 
-std::string Solution::convert(std::string s, int numRows) {
+std::string Solution::convert(std::string s, int numRows) 
+{
    std::string result;
 
    if (numRows == 1)

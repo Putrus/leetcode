@@ -31,4 +31,7 @@ public:
    //8. String to integer (atoi)
    int myAtoi(std::string s);
 
+   //9. Palindrome Number
+   bool isPalindrome(int x);
+
 };
