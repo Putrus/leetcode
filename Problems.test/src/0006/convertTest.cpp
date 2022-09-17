@@ -26,7 +26,7 @@ namespace Problems
 					std::string result = solution.convert("PAYPALISHIRING", 4);
 					Assert::IsTrue(result == "PINALSIGYAHRPI");
 				}
-				
+
 				TEST_METHOD(A1)
 				{
 					std::string result = solution.convert("A", 1);

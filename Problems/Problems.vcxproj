@@ -157,6 +157,7 @@
     <ClCompile Include="Hard\0004\findMedianSortedArrays.cpp" />
     <ClCompile Include="Medium\0005\longestPalindrome.cpp" />
     <ClCompile Include="Medium\0006\convert.cpp" />
+    <ClCompile Include="Medium\0007\reverse.cpp" />
     <ClCompile Include="Structs\src\ListNode.cpp" />
     <ClCompile Include="Solution\src\main.cpp" />
   </ItemGroup>

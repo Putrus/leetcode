@@ -25,4 +25,7 @@ public:
    //6. Zigzag Conversion
    std::string convert(std::string s, int numRows);
 
+   //7. Reverse Integer
+   int reverse(int x);
+
 };
