@@ -23,6 +23,6 @@ public:
    std::string longestPalindrome(std::string s);
 
    //6. Zigzag Conversion
-   std::string convert(std::string, int numRows);
+   std::string convert(std::string s, int numRows);
 
 };

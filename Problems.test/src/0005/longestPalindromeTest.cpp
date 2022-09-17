@@ -8,28 +8,31 @@ namespace Problems
 {
 	namespace Test
 	{
-		TEST_CLASS(LongestPalindrome)
+		namespace Medium
 		{
-		public:
-			Solution solution;
-
-			TEST_METHOD(Example1)
+			TEST_CLASS(LongestPalindrome)
 			{
-				std::string result = solution.longestPalindrome("babad");
-				Assert::IsTrue(result == "bab" || result == "aba");
-			}
+			public:
+				Solution solution;
 
-			TEST_METHOD(Example2)
-			{
-				std::string result = solution.longestPalindrome("cbbd");
-				Assert::IsTrue(result == "bb");
-			}
+				TEST_METHOD(Example1)
+				{
+					std::string result = solution.longestPalindrome("babad");
+					Assert::IsTrue(result == "bab" || result == "aba");
+				}
 
-			TEST_METHOD(Test1)
-			{
-				std::string result = solution.longestPalindrome("caba");
-				Assert::IsTrue(result == "aba");
-			}
-		};
+				TEST_METHOD(Example2)
+				{
+					std::string result = solution.longestPalindrome("cbbd");
+					Assert::IsTrue(result == "bb");
+				}
+
+				TEST_METHOD(Test1)
+				{
+					std::string result = solution.longestPalindrome("caba");
+					Assert::IsTrue(result == "aba");
+				}
+			};
+		}
 	}
 }
