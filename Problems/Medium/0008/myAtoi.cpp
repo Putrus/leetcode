@@ -52,15 +52,15 @@ int Solution::myAtoi(std::string s)
          break;
       }
    }
-   auto max = [](int a, long long b) -> int
+   auto max = [](int a, long long b) -> long long
    {
       return a > b ? a : b;
    };
    
-   auto min = [](int a, long long b) -> int
+   auto min = [](int a, long long b) -> long long
    {
       return a < b ? a : b;
    };
 
-   return neg ? max(INT_MIN, -result) : min(INT_MAX, result);
+   return neg ? static_cast<int>(max(INT_MIN, -result)) : static_cast<int>(min(INT_MAX, result));
 }
