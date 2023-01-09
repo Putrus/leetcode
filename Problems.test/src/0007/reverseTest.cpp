@@ -10,29 +10,29 @@ namespace Problems
 	{
 		namespace Medium
 		{
-			TEST_CLASS(LengthOfLongestSubstring)
+			TEST_CLASS(Reverse)
 			{
 			public:
 				Solution solution;
 
 				TEST_METHOD(Example1)
 				{
-					Assert::AreEqual(solution.lengthOfLongestSubstring("abcabcbb"), 3);
+					Assert::AreEqual(solution.reverse(123), 321);
 				}
 
 				TEST_METHOD(Example2)
 				{
-					Assert::AreEqual(solution.lengthOfLongestSubstring("bbbbb"), 1);
+					Assert::AreEqual(solution.reverse(-123), -321);
 				}
 
 				TEST_METHOD(Example3)
 				{
-					Assert::AreEqual(solution.lengthOfLongestSubstring("pwwkew"), 3);
+					Assert::AreEqual(solution.reverse(120), 21);
 				}
 
-				TEST_METHOD(Test1)
+				TEST_METHOD(MaxInt)
 				{
-					Assert::AreEqual(solution.lengthOfLongestSubstring("aabaab!bb"), 3);
+					Assert::AreEqual(solution.reverse(INT_MAX), 0);
 				}
 			};
 		}

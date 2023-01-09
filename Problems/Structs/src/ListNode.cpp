@@ -6,35 +6,44 @@ ListNode::ListNode(int x) : val(x), next(nullptr) {}
 
 ListNode::ListNode(int x, ListNode* next) : val(x), next(next) {}
 
-ListNode::ListNode(std::vector<int> values) {
-   if (values.empty()) {
+ListNode::ListNode(std::vector<int> values) 
+{
+   if (values.empty()) 
+   {
       val = 0;
    }
-   else {
+   else 
+   {
       val = values[0];
    }
    next = nullptr;
    ListNode* iterator = this;
    bool first = true;
-   for (size_t i = 1; i < values.size(); ++i) {
+   for (size_t i = 1; i < values.size(); ++i) 
+   {
       iterator->next = new ListNode(values[i]);
       iterator = iterator->next;
    }
 }
 
-ListNode::~ListNode() {
+ListNode::~ListNode() 
+{
    delete this->next;
 }
 
-bool operator==(const ListNode* l, const std::vector<int>& v) {
+bool operator==(const ListNode* l, const std::vector<int>& v) 
+{
    ListNode* it = const_cast<ListNode*>(l);
-   for (auto const& val : v) {
-      if (!it || it->val != val) {
+   for (auto const& val : v) 
+   {
+      if (!it || it->val != val) 
+      {
          return false;
       }
       it = it->next;
    }
-   if (it) {
+   if (it) 
+   {
       return false;
    }
    return true;

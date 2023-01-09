@@ -21,4 +21,17 @@ public:
 
    //5. Longest Palindromic Substring
    std::string longestPalindrome(std::string s);
+
+   //6. Zigzag Conversion
+   std::string convert(std::string s, int numRows);
+
+   //7. Reverse Integer
+   int reverse(int x);
+
+   //8. String to integer (atoi)
+   int myAtoi(std::string s);
+
+   //9. Palindrome Number
+   bool isPalindrome(int x);
+
 };

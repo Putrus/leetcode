@@ -8,24 +8,31 @@ namespace Problems
 {
 	namespace Test
 	{
-		TEST_CLASS(LongestPalindrome)
+		namespace Medium
 		{
-		public:
-			Solution solution;
-
-			TEST_METHOD(Example1)
+			TEST_CLASS(LongestPalindrome)
 			{
-				std::vector<int> nums1 = { 1, 3 };
-				std::vector<int> nums2 = { 2 };
-				Assert::AreEqual(solution.findMedianSortedArrays(nums1, nums2), 2.0);
-			}
+			public:
+				Solution solution;
 
-			TEST_METHOD(Example2)
-			{
-				std::vector<int> nums1 = { 1, 2 };
-				std::vector<int> nums2 = { 3, 4 };
-				Assert::AreEqual(solution.findMedianSortedArrays(nums1, nums2), 2.5);
-			}
-		};
+				TEST_METHOD(Example1)
+				{
+					std::string result = solution.longestPalindrome("babad");
+					Assert::IsTrue(result == "bab" || result == "aba");
+				}
+
+				TEST_METHOD(Example2)
+				{
+					std::string result = solution.longestPalindrome("cbbd");
+					Assert::IsTrue(result == "bb");
+				}
+
+				TEST_METHOD(Test1)
+				{
+					std::string result = solution.longestPalindrome("caba");
+					Assert::IsTrue(result == "aba");
+				}
+			};
+		}
 	}
 }

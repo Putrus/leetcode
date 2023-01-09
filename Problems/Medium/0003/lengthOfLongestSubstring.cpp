@@ -6,14 +6,17 @@ Runtime: 10 ms, faster than 82.51% of C++ online submissions for Longest Substri
 Memory Usage: 6.9 MB, less than 91.15% of C++ online submissions for Longest Substring Without Repeating Characters.
 */
 
-int Solution::lengthOfLongestSubstring(std::string s) {
+int Solution::lengthOfLongestSubstring(std::string s) 
+{
    int current_length = 0;
    int result = 0;
    std::string current;
 
-   for (auto const& c : s) {
+   for (auto const& c : s) 
+   {
       auto find = std::find(current.begin(), current.end(), c);
-      if (find != current.end()) {
+      if (find != current.end()) 
+      {
          current.erase(current.begin(), find + 1);
       }
       current += c;
