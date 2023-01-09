@@ -17,7 +17,7 @@ int Solution::lengthOfLongestSubstring(std::string s) {
          current.erase(current.begin(), find + 1);
       }
       current += c;
-      current_length = current.length();
+      current_length = static_cast<int>(current.length());
       result = std::max(result, current_length);
    }
    return result;
