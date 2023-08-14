@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="Easy\0001\twoSum.cpp" />
     <ClCompile Include="Easy\0009\isPalindrome.cpp" />
+    <ClCompile Include="Hard\0010\isMatch.cpp" />
     <ClCompile Include="Medium\0002\addTwoNumbers.cpp" />
     <ClCompile Include="Medium\0003\lengthOfLongestSubstring.cpp" />
     <ClCompile Include="Hard\0004\findMedianSortedArrays.cpp" />

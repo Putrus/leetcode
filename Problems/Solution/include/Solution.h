@@ -5,7 +5,8 @@
 #include <vector>
 #include <string>
 
-class Solution {
+class Solution
+{
 public:
    //1. Two Sum
    std::vector<int> twoSum(std::vector<int>& nums, int target);
@@ -34,4 +35,6 @@ public:
    //9. Palindrome Number
    bool isPalindrome(int x);
 
+   //10. Regular Expression Matching
+   bool isMatch(std::string s, std::string p);
 };
