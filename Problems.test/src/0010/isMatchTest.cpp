@@ -29,6 +29,11 @@ namespace Problems
 				{
 					Assert::IsTrue(solution.isMatch("ab", ".*"));
 				}
+
+				TEST_METHOD(MyTest1)
+				{
+					Assert::IsTrue(solution.isMatch("ab", "a.*b"));
+				}
 			};
 		}
 	}
