@@ -37,4 +37,7 @@ public:
 
    //10. Regular Expression Matching
    bool isMatch(std::string s, std::string p);
+
+   //11. Container With Most Water
+   int maxArea(std::vector<int>& height);
 };

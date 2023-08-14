@@ -19,24 +19,24 @@ namespace Problems
 				{
 					std::vector<int> nums = { 2, 7, 11, 15 };
 					std::vector<int> result = solution.twoSum(nums, 9);
-					Assert::AreEqual(result[0], 0);
-					Assert::AreEqual(result[1], 1);
+					Assert::AreEqual(0, result[0]);
+					Assert::AreEqual(1, result[1]);
 				}
 
 				TEST_METHOD(Example2)
 				{
 					std::vector<int> nums = { 3, 2, 4 };
 					std::vector<int> result = solution.twoSum(nums, 6);
-					Assert::AreEqual(result[0], 1);
-					Assert::AreEqual(result[1], 2);
+					Assert::AreEqual(1, result[0]);
+					Assert::AreEqual(2, result[1]);
 				}
 
 				TEST_METHOD(Example3)
 				{
 					std::vector<int> nums = { 3, 3 };
 					std::vector<int> result = solution.twoSum(nums, 6);
-					Assert::AreEqual(result[0], 0);
-					Assert::AreEqual(result[1], 1);
+					Assert::AreEqual(0, result[0]);
+					Assert::AreEqual(1, result[1]);
 				}
 
 				TEST_METHOD(EmptyNums)

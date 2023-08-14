@@ -17,57 +17,57 @@ namespace Problems
 
 				TEST_METHOD(Example1)
 				{
-					Assert::AreEqual(solution.myAtoi("42"), 42);
+					Assert::AreEqual(42, solution.myAtoi("42"));
 				}
 
 				TEST_METHOD(Example2)
 				{
-					Assert::AreEqual(solution.myAtoi("   -42"), -42);
+					Assert::AreEqual(-42, solution.myAtoi("   -42"));
 				}
 
 				TEST_METHOD(Example3)
 				{
-					Assert::AreEqual(solution.myAtoi("4193 with words"), 4193);
+					Assert::AreEqual(4193, solution.myAtoi("4193 with words"));
 				}
 
 				TEST_METHOD(WordsAnd987)
 				{
-					Assert::AreEqual(solution.myAtoi("words and 987"), 0);
+					Assert::AreEqual(0, solution.myAtoi("words and 987"));
 				}
 
 				TEST_METHOD(BigNegative)
 				{
-					Assert::AreEqual(solution.myAtoi("-91283472332"), INT_MIN);
+					Assert::AreEqual(INT_MIN, solution.myAtoi("-91283472332"));
 				}
 
 				TEST_METHOD(PositiveNegative)
 				{
-					Assert::AreEqual(solution.myAtoi("+-12"), 0);
+					Assert::AreEqual(0, solution.myAtoi("+-12"));
 				}
 
 				TEST_METHOD(Strange1)
 				{
-					Assert::AreEqual(solution.myAtoi("00000-42a1234"), 0);
+					Assert::AreEqual(0, solution.myAtoi("00000-42a1234"));
 				}
 
 				TEST_METHOD(Strange2)
 				{
-					Assert::AreEqual(solution.myAtoi("   +0 123"), 0);
+					Assert::AreEqual(0, solution.myAtoi("   +0 123"));
 				}
 
 				TEST_METHOD(Strange3)
 				{
-					Assert::AreEqual(solution.myAtoi("  +  413"), 0);
+					Assert::AreEqual(0, solution.myAtoi("  +  413"));
 				}
 
 				TEST_METHOD(Strange4)
 				{
-					Assert::AreEqual(solution.myAtoi(" ++1"), 0);
+					Assert::AreEqual(0, solution.myAtoi(" ++1"));
 				}
 
 				TEST_METHOD(MonsterNumber)
 				{
-					Assert::AreEqual(solution.myAtoi("20000000000000000000"), INT_MAX);
+					Assert::AreEqual(INT_MAX, solution.myAtoi("20000000000000000000"));
 				}
 			};
 		}

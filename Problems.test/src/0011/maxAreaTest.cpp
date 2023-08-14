@@ -10,29 +10,21 @@ namespace Problems
 	{
 		namespace Medium
 		{
-			TEST_CLASS(Reverse)
+			TEST_CLASS(MaxArea)
 			{
 			public:
 				Solution solution;
 
 				TEST_METHOD(Example1)
 				{
-					Assert::AreEqual(321, solution.reverse(123));
+					std::vector<int> arg = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+					Assert::AreEqual(49, solution.maxArea(arg));
 				}
 
 				TEST_METHOD(Example2)
 				{
-					Assert::AreEqual(-321, solution.reverse(-123));
-				}
-
-				TEST_METHOD(Example3)
-				{
-					Assert::AreEqual(21, solution.reverse(120));
-				}
-
-				TEST_METHOD(MaxInt)
-				{
-					Assert::AreEqual(0, solution.reverse(INT_MAX));
+					std::vector<int> arg = { 1, 1 };
+					Assert::AreEqual(1, solution.maxArea(arg));
 				}
 			};
 		}

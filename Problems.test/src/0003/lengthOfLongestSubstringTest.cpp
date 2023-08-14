@@ -17,22 +17,22 @@ namespace Problems
 
 				TEST_METHOD(Example1)
 				{
-					Assert::AreEqual(solution.lengthOfLongestSubstring("abcabcbb"), 3);
+					Assert::AreEqual(3, solution.lengthOfLongestSubstring("abcabcbb"));
 				}
 
 				TEST_METHOD(Example2)
 				{
-					Assert::AreEqual(solution.lengthOfLongestSubstring("bbbbb"), 1);
+					Assert::AreEqual(1, solution.lengthOfLongestSubstring("bbbbb"));
 				}
 
 				TEST_METHOD(Example3)
 				{
-					Assert::AreEqual(solution.lengthOfLongestSubstring("pwwkew"), 3);
+					Assert::AreEqual(3, solution.lengthOfLongestSubstring("pwwkew"));
 				}
 
 				TEST_METHOD(Test1)
 				{
-					Assert::AreEqual(solution.lengthOfLongestSubstring("aabaab!bb"), 3);
+					Assert::AreEqual(3, solution.lengthOfLongestSubstring("aabaab!bb"));
 				}
 			};
 		}

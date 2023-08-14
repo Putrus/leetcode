@@ -18,25 +18,25 @@ namespace Problems
 				TEST_METHOD(Example1)
 				{
 					std::string result = solution.convert("PAYPALISHIRING", 3);
-					Assert::IsTrue(result == "PAHNAPLSIIGYIR");
+					Assert::IsTrue("PAHNAPLSIIGYIR" == result);
 				}
 
 				TEST_METHOD(Example2)
 				{
 					std::string result = solution.convert("PAYPALISHIRING", 4);
-					Assert::IsTrue(result == "PINALSIGYAHRPI");
+					Assert::IsTrue("PINALSIGYAHRPI" == result);
 				}
 
 				TEST_METHOD(A1)
 				{
 					std::string result = solution.convert("A", 1);
-					Assert::IsTrue(result == "A");
+					Assert::IsTrue("A" == result);
 				}
 
 				TEST_METHOD(AB1)
 				{
 					std::string result = solution.convert("AB", 1);
-					Assert::IsTrue(result == "AB");
+					Assert::IsTrue("AB" == result);
 				}
 			};
 		}
