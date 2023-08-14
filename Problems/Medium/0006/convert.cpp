@@ -17,7 +17,8 @@ std::string Solution::convert(std::string s, int numRows)
 
    for (int i = 0; i < numRows; ++i)
    {
-      for (int j = i; j < s.length();)
+      int sLength = static_cast<int>(s.length());
+      for (int j = i; j < sLength;)
       {
          result += s[j];
          if (i > 0 && i < numRows - 1)
@@ -28,7 +29,7 @@ std::string Solution::convert(std::string s, int numRows)
             //c        r
             //next elements in [] brackets above
             int next = j + (numRows - 1 - i) * 2;
-            if (next < s.length())
+            if (next < sLength)
             {
                result += s[next];
             }  
