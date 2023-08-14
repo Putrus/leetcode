@@ -43,4 +43,7 @@ public:
 
    //12. Integer to Roman
    std::string intToRoman(int num);
+
+   //13. Roman to Integer
+   int romanToInt(std::string s);
 };
