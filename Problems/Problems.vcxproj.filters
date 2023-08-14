@@ -54,6 +54,9 @@
     <ClCompile Include="Medium\0011\maxArea.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Medium\0012\intToRoman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution\include\Solution.h">

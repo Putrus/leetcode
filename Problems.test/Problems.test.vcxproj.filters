@@ -48,5 +48,8 @@
     <ClCompile Include="src\0011\maxAreaTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\0012\intToRomanTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

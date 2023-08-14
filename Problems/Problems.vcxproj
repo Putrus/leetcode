@@ -162,6 +162,7 @@
     <ClCompile Include="Medium\0007\reverse.cpp" />
     <ClCompile Include="Medium\0008\myAtoi.cpp" />
     <ClCompile Include="Medium\0011\maxArea.cpp" />
+    <ClCompile Include="Medium\0012\intToRoman.cpp" />
     <ClCompile Include="Structs\src\ListNode.cpp" />
     <ClCompile Include="Solution\src\main.cpp" />
   </ItemGroup>

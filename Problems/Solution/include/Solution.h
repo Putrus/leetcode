@@ -40,4 +40,7 @@ public:
 
    //11. Container With Most Water
    int maxArea(std::vector<int>& height);
+
+   //12. Integer to Roman
+   std::string intToRoman(int num);
 };
