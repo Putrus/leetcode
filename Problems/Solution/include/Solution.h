@@ -46,4 +46,7 @@ public:
 
    //13. Roman to Integer
    int romanToInt(std::string s);
+
+   //14. Longest Common Prefix
+   std::string longestCommonPrefix(std::vector<std::string>& strs);
 };

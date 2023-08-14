@@ -29,7 +29,7 @@ bool isMatchRecursion(const std::string& s, const std::string& p, int sId, int p
    }
 
    bool result = sId != s.length() && (p.at(pId) == s.at(sId) || p.at(pId) == '.');
-   if (pId < p.length() - 1 && p.at(pId + 1) == '*')
+   if (pId < static_cast<int>(p.length() - 1) && p.at(pId + 1) == '*')
    {
       //* means zero or more of the preceding element
       bool zero = isMatchRecursion(s, p, sId, pId + 2, dp);
