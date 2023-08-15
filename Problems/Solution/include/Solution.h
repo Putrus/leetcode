@@ -52,4 +52,7 @@ public:
 
    //15. 3Sum
    std::vector<std::vector<int>> threeSum(std::vector<int>& nums);
+
+   //16. 3Sum Closest
+   int threeSumClosest(std::vector<int>& nums, int target);
 };

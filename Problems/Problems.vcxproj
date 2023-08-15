@@ -166,6 +166,7 @@
     <ClCompile Include="Medium\0011\maxArea.cpp" />
     <ClCompile Include="Medium\0012\intToRoman.cpp" />
     <ClCompile Include="Medium\0015\threeSum.cpp" />
+    <ClCompile Include="Medium\0016\threeSumClosest.cpp" />
     <ClCompile Include="Structs\src\ListNode.cpp" />
     <ClCompile Include="Solution\src\main.cpp" />
   </ItemGroup>
