@@ -49,4 +49,7 @@ public:
 
    //14. Longest Common Prefix
    std::string longestCommonPrefix(std::vector<std::string>& strs);
+
+   //15. 3Sum
+   std::vector<std::vector<int>> threeSum(std::vector<int>& nums);
 };
