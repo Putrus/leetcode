@@ -58,4 +58,7 @@ public:
 
    //17. Letter Combinations of a Phone Number
    std::vector<std::string> letterCombinations(std::string digits);
+
+   //18. 4Sum
+   std::vector<std::vector<int>> fourSum(std::vector<int>& nums, int target);
 };
