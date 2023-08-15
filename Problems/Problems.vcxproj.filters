@@ -69,6 +69,9 @@
     <ClCompile Include="Medium\0016\threeSumClosest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Medium\0017\letterCombinations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution\include\Solution.h">

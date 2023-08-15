@@ -55,4 +55,7 @@ public:
 
    //16. 3Sum Closest
    int threeSumClosest(std::vector<int>& nums, int target);
+
+   //17. Letter Combinations of a Phone Number
+   std::vector<std::string> letterCombinations(std::string digits);
 };
