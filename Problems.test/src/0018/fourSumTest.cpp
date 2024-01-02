@@ -30,6 +30,22 @@ namespace Problems
 					std::vector<std::vector<int>> actual = solution.fourSum(nums, 8);
 					Assert::IsTrue(actual == expected);
 				}
+
+				TEST_METHOD(MyTest1)
+				{
+					std::vector<int> nums = { -1, 0, 1, 2, -1, -4 };
+					std::vector<std::vector<int>> expected = { { -4, 0, 1, 2 }, { -1, -1, 0, 1 } };
+					std::vector<std::vector<int>> actual = solution.fourSum(nums, -1);
+					Assert::IsTrue(actual == expected);
+				}
+
+				TEST_METHOD(MyTest2)
+				{
+					std::vector<int> nums = { -3, -1, 0, 2, 4, 5 };
+					std::vector<std::vector<int>> expected = { { -3, -1, 2, 4 } };
+					std::vector<std::vector<int>> actual = solution.fourSum(nums, 2);
+					Assert::IsTrue(actual == expected);
+				}
 			};
 		}
 	}
