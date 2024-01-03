@@ -75,6 +75,9 @@
     <ClCompile Include="Medium\0018\fourSum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Medium\0019\removeNthFromEnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution\include\Solution.h">

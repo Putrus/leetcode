@@ -202,6 +202,7 @@
     <ClCompile Include="src\0016\threeSumClosestTest.cpp" />
     <ClCompile Include="src\0017\letterCombinationsTest.cpp" />
     <ClCompile Include="src\0018\fourSumTest.cpp" />
+    <ClCompile Include="src\0019\removeNthFromEndTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

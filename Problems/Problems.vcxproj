@@ -169,6 +169,7 @@
     <ClCompile Include="Medium\0016\threeSumClosest.cpp" />
     <ClCompile Include="Medium\0017\letterCombinations.cpp" />
     <ClCompile Include="Medium\0018\fourSum.cpp" />
+    <ClCompile Include="Medium\0019\removeNthFromEnd.cpp" />
     <ClCompile Include="Structs\src\ListNode.cpp" />
     <ClCompile Include="Solution\src\main.cpp" />
   </ItemGroup>

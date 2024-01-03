@@ -61,4 +61,7 @@ public:
 
    //18. 4Sum
    std::vector<std::vector<int>> fourSum(std::vector<int>& nums, int target);
+
+   //19. Remove Nth Node From End of List
+   ListNode* removeNthFromEnd(ListNode* head, int n);
 };
