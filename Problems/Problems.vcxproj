@@ -155,6 +155,7 @@
     <ClCompile Include="Easy\0009\isPalindrome.cpp" />
     <ClCompile Include="Easy\0013\romanToInt.cpp" />
     <ClCompile Include="Easy\0014\longestCommonPrefix.cpp" />
+    <ClCompile Include="Easy\0020\isValid.cpp" />
     <ClCompile Include="Hard\0010\isMatch.cpp" />
     <ClCompile Include="Medium\0002\addTwoNumbers.cpp" />
     <ClCompile Include="Medium\0003\lengthOfLongestSubstring.cpp" />

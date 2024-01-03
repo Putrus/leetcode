@@ -64,4 +64,7 @@ public:
 
    //19. Remove Nth Node From End of List
    ListNode* removeNthFromEnd(ListNode* head, int n);
+
+   //20. Valid Parentheses
+   bool isValid(const std::string& s);
 };
