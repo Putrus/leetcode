@@ -17,17 +17,34 @@ namespace Problems
 
 				TEST_METHOD(Example1)
 				{
-					
+					ListNode* head = new ListNode({ 1, 2, 3, 4, 5 });
+					std::vector<int> expected = { 1, 2, 3, 5 };
+					ListNode* actual = solution.removeNthFromEnd(head, 2);
+					Assert::IsTrue(actual == expected);
 				}
 
 				TEST_METHOD(Example2)
 				{
-					
+					ListNode* head = new ListNode({ 1 });
+					std::vector<int> expected = { };
+					ListNode* actual = solution.removeNthFromEnd(head, 1);
+					Assert::IsTrue(actual == expected);
 				}
 
 				TEST_METHOD(Example3)
 				{
-					
+					ListNode* head = new ListNode({ 1, 2 });
+					std::vector<int> expected = { 1 };
+					ListNode* actual = solution.removeNthFromEnd(head, 1);
+					Assert::IsTrue(actual == expected);
+				}
+
+				TEST_METHOD(MyTest1)
+				{
+					ListNode* head = new ListNode({ 1, 2 });
+					std::vector<int> expected = { 2 };
+					ListNode* actual = solution.removeNthFromEnd(head, 2);
+					Assert::IsTrue(actual == expected);
 				}
 			};
 		}

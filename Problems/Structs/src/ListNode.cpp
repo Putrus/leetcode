@@ -17,12 +17,11 @@ ListNode::ListNode(const std::vector<int>& values)
       val = values[0];
    }
    next = nullptr;
-   ListNode* iterator = this;
-   bool first = true;
+   ListNode* it = this;
    for (size_t i = 1; i < values.size(); ++i) 
    {
-      iterator->next = new ListNode(values[i]);
-      iterator = iterator->next;
+      it->next = new ListNode(values[i]);
+      it = it->next;
    }
 }
 
@@ -33,7 +32,7 @@ ListNode::~ListNode()
 
 bool operator==(const ListNode* l, const std::vector<int>& v) 
 {
-   ListNode* it = const_cast<ListNode*>(l);
+   const ListNode* it = l;
    for (auto const& val : v) 
    {
       if (!it || it->val != val) 
