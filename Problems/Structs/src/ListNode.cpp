@@ -6,7 +6,7 @@ ListNode::ListNode(int x) : val(x), next(nullptr) {}
 
 ListNode::ListNode(int x, ListNode* next) : val(x), next(next) {}
 
-ListNode::ListNode(std::vector<int> values) 
+ListNode::ListNode(const std::vector<int>& values) 
 {
    if (values.empty()) 
    {

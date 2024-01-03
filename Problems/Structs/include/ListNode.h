@@ -12,7 +12,7 @@ struct ListNode
    ListNode();
    ListNode(int x);
    ListNode(int x, ListNode* next);
-   ListNode(std::vector<int> values);
+   ListNode(const std::vector<int>& values);
 
    virtual ~ListNode();
 
