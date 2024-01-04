@@ -3,58 +3,59 @@
 #include <map>
 
 /*
-Runtime: 6 ms, faster than 38.03% of C++ online submissions for Longest Common Prefix.
+Runtime: 3 ms, faster than 45.40% of C++ online submissions for Valid Parentheses.
 
-Memory Usage: 9.30 MB, less than 35.75% of C++ online submissions for Longest Common Prefix.
+Memory Usage: 6.60 MB, less than 74.18% of C++ online submissions for Valid Parentheses.
 */
 
 bool Solution::isValid(const std::string& s)
 {
-   int parentheses = 0;
-   int square = 0;
-   int curly = 0;
+   std::string p;
    for (char c : s)
    {
-      if (c == '(')
+      if (c == ')')
       {
-         ++parentheses;
-      }
-      else if (c == ')')
-      {
-         --parentheses;
-         if (parentheses < 0)
+         if (!p.empty() && p[p.size() - 1] == '(')
+         {
+            p.erase(p.begin() + p.size() - 1);
+         }
+         else
          {
             return false;
          }
-      }
-      else if (c == '[')
-      {
-         ++square;
       }
       else if (c == ']')
       {
-         --square;
-         if (square < 0)
+         if (!p.empty() && p[p.size() - 1] == '[')
+         {
+            p.erase(p.begin() + p.size() - 1);
+         }
+         else
          {
             return false;
          }
-      }
-      else if (c == '{')
-      {
-         ++curly;
       }
       else if (c == '}')
       {
-         --curly;
-         if (curly < 0)
+         if (!p.empty() && p[p.size() - 1] == '{')
+         {
+            p.erase(p.begin() + p.size() - 1);
+         }
+         else
          {
             return false;
          }
       }
+      else
+      {
+         p += c;
+      }
    }
-   if (parentheses == square == curly == 0)
+
+   if (p.empty())
    {
       return true;
    }
+
    return false;
 }
