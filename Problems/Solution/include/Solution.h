@@ -67,4 +67,7 @@ public:
 
    //20. Valid Parentheses
    bool isValid(const std::string& s);
+
+   //21. Merge Two Sorted Lists
+   ListNode* mergeTwoLists(ListNode* list1, ListNode* list2);
 };

@@ -21,6 +21,7 @@ namespace Problems
 					std::vector<int> expected = { 1, 2, 3, 5 };
 					ListNode* actual = solution.removeNthFromEnd(head, 2);
 					Assert::IsTrue(actual == expected);
+					delete actual;
 				}
 
 				TEST_METHOD(Example2)
@@ -29,6 +30,7 @@ namespace Problems
 					std::vector<int> expected = { };
 					ListNode* actual = solution.removeNthFromEnd(head, 1);
 					Assert::IsTrue(actual == expected);
+					delete actual;
 				}
 
 				TEST_METHOD(Example3)
@@ -37,6 +39,7 @@ namespace Problems
 					std::vector<int> expected = { 1 };
 					ListNode* actual = solution.removeNthFromEnd(head, 1);
 					Assert::IsTrue(actual == expected);
+					delete actual;
 				}
 
 				TEST_METHOD(MyTest1)
@@ -45,6 +48,7 @@ namespace Problems
 					std::vector<int> expected = { 2 };
 					ListNode* actual = solution.removeNthFromEnd(head, 2);
 					Assert::IsTrue(actual == expected);
+					delete actual;
 				}
 			};
 		}

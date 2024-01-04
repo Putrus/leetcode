@@ -75,5 +75,8 @@
     <ClCompile Include="src\0020\isValidTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\0021\mergeTwoListsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
