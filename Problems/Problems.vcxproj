@@ -158,6 +158,7 @@
     <ClCompile Include="Easy\0020\isValid.cpp" />
     <ClCompile Include="Easy\0021\mergeTwoLists.cpp" />
     <ClCompile Include="Hard\0010\isMatch.cpp" />
+    <ClCompile Include="Hard\0023\mergeKLists.cpp" />
     <ClCompile Include="Medium\0002\addTwoNumbers.cpp" />
     <ClCompile Include="Medium\0003\lengthOfLongestSubstring.cpp" />
     <ClCompile Include="Hard\0004\findMedianSortedArrays.cpp" />

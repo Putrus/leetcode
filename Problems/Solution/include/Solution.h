@@ -73,4 +73,7 @@ public:
 
    //22. Generate Parentheses
    std::vector<std::string> generateParenthesis(int n);
+
+   //23. Merge k Sorted Lists
+   ListNode* mergeKLists(std::vector<ListNode*>& lists);
 };

@@ -81,5 +81,8 @@
     <ClCompile Include="src\0022\generateParenthesisTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\0023\mergeKListsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
