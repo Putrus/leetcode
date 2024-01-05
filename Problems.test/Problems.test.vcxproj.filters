@@ -15,73 +15,73 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\0001\twoSumTest.cpp">
+    <ClCompile Include="Easy\0001\twoSumTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0002\addTwoNumbersTest.cpp">
+    <ClCompile Include="Medium\0002\addTwoNumbersTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0003\lengthOfLongestSubstringTest.cpp">
+    <ClCompile Include="Medium\0003\lengthOfLongestSubstringTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0004\findMedianSortedArraysTest.cpp">
+    <ClCompile Include="Hard\0004\findMedianSortedArraysTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0005\longestPalindromeTest.cpp">
+    <ClCompile Include="Medium\0005\longestPalindromeTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0006\convertTest.cpp">
+    <ClCompile Include="Medium\0006\convertTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0007\reverseTest.cpp">
+    <ClCompile Include="Medium\0007\reverseTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0008\myAtoiTest.cpp">
+    <ClCompile Include="Medium\0008\myAtoiTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0009\isPalindromeTest.cpp">
+    <ClCompile Include="Easy\0009\isPalindromeTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0010\isMatchTest.cpp">
+    <ClCompile Include="Hard\0010\isMatchTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0011\maxAreaTest.cpp">
+    <ClCompile Include="Medium\0011\maxAreaTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0012\intToRomanTest.cpp">
+    <ClCompile Include="Medium\0012\intToRomanTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0013\romanToIntTest.cpp">
+    <ClCompile Include="Easy\0013\romanToIntTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0014\longestCommonPrefixTest.cpp">
+    <ClCompile Include="Easy\0014\longestCommonPrefixTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0015\threeSumTest.cpp">
+    <ClCompile Include="Medium\0015\threeSumTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0016\threeSumClosestTest.cpp">
+    <ClCompile Include="Medium\0016\threeSumClosestTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0017\letterCombinationsTest.cpp">
+    <ClCompile Include="Medium\0017\letterCombinationsTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0018\fourSumTest.cpp">
+    <ClCompile Include="Medium\0018\fourSumTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0019\removeNthFromEndTest.cpp">
+    <ClCompile Include="Medium\0019\removeNthFromEndTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0020\isValidTest.cpp">
+    <ClCompile Include="Easy\0020\isValidTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0021\mergeTwoListsTest.cpp">
+    <ClCompile Include="Easy\0021\mergeTwoListsTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0022\generateParenthesisTest.cpp">
+    <ClCompile Include="Medium\0022\generateParenthesisTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\0023\mergeKListsTest.cpp">
+    <ClCompile Include="Hard\0023\mergeKListsTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
