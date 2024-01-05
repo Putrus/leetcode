@@ -84,5 +84,8 @@
     <ClCompile Include="Hard\0023\mergeKListsTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Medium\0024\swapPairsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

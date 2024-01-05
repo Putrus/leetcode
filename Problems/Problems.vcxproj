@@ -174,6 +174,7 @@
     <ClCompile Include="Medium\0018\fourSum.cpp" />
     <ClCompile Include="Medium\0019\removeNthFromEnd.cpp" />
     <ClCompile Include="Medium\0022\generateParenthesis.cpp" />
+    <ClCompile Include="Medium\0024\swapPairs.cpp" />
     <ClCompile Include="Structs\src\ListNode.cpp" />
     <ClCompile Include="Solution\src\main.cpp" />
   </ItemGroup>

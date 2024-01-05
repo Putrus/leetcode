@@ -76,4 +76,8 @@ public:
 
    //23. Merge k Sorted Lists
    ListNode* mergeKLists(std::vector<ListNode*>& lists);
+
+   //24. Swap Nodes in Pairs
+   ListNode* swapPairs(ListNode* head);
+
 };
