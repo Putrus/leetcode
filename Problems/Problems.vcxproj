@@ -157,6 +157,7 @@
     <ClCompile Include="Easy\0014\longestCommonPrefix.cpp" />
     <ClCompile Include="Easy\0020\isValid.cpp" />
     <ClCompile Include="Easy\0021\mergeTwoLists.cpp" />
+    <ClCompile Include="Easy\0026\removeDuplicates.cpp" />
     <ClCompile Include="Hard\0010\isMatch.cpp" />
     <ClCompile Include="Hard\0023\mergeKLists.cpp" />
     <ClCompile Include="Hard\0025\reverseKGroup.cpp" />

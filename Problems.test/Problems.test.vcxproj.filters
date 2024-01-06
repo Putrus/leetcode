@@ -90,5 +90,8 @@
     <ClCompile Include="Hard\0025\reverseKGroupTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Easy\0026\removeDuplicatesTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
