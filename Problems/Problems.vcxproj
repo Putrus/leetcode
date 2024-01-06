@@ -96,7 +96,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -159,6 +159,7 @@
     <ClCompile Include="Easy\0021\mergeTwoLists.cpp" />
     <ClCompile Include="Hard\0010\isMatch.cpp" />
     <ClCompile Include="Hard\0023\mergeKLists.cpp" />
+    <ClCompile Include="Hard\0025\reverseKGroup.cpp" />
     <ClCompile Include="Medium\0002\addTwoNumbers.cpp" />
     <ClCompile Include="Medium\0003\lengthOfLongestSubstring.cpp" />
     <ClCompile Include="Hard\0004\findMedianSortedArrays.cpp" />

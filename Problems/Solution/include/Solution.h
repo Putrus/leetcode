@@ -80,4 +80,6 @@ public:
    //24. Swap Nodes in Pairs
    ListNode* swapPairs(ListNode* head);
 
+   //25. Reverse Nodes in k-Group
+   ListNode* reverseKGroup(ListNode* head, int k);
 };
