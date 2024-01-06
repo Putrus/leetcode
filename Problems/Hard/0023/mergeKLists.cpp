@@ -1,5 +1,7 @@
 #include "../../Solution/include/Solution.h"
 
+#include <algorithm>
+
 /*
 Runtime: 337 ms, faster than 6.38% of C++ online submissions for Merge k Sorted Lists.
 

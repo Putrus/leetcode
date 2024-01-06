@@ -1,13 +1,13 @@
 #include "../../Solution/include/Solution.h"
 
+#include <algorithm>
+#include <set>
+
 /*
 Runtime: 734 ms, faster than 5.82% of C++ online submissions for 4Sum.
 
 Memory Usage: 49.71 MB, less than 20.14% of C++ online submissions for 4Sum.
 */
-
-#include <algorithm>
-#include <set>
 
 std::vector<std::vector<int>> Solution::fourSum(std::vector<int>& nums, int target)
 {
