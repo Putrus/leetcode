@@ -109,7 +109,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <AdditionalLibraryDirectories>$(SolutionDir)bin\Problems\intermediates\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(VCInstallDir)UnitTest\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>removeDuplicates.obj;reverseKGroup.obj;swapPairs.obj;mergeKLists.obj;generateParenthesis.obj;mergeTwoLists.obj;isValid.obj;removeNthFromEnd.obj;fourSum.obj;letterCombinations.obj;threeSumClosest;threeSum.obj;longestCommonPrefix.obj;romanToInt.obj;intToRoman.obj;maxArea.obj;isMatch.obj;isPalindrome.obj;myAtoi.obj;reverse.obj;convert.obj;longestPalindrome.obj;findMedianSortedArrays.obj;lengthOfLongestSubstring.obj;addTwoNumbers.obj;twoSum.obj;ListNode.obj;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>findSubstring.obj;divide.obj;strStr.obj;removeElement.obj;removeDuplicates.obj;reverseKGroup.obj;swapPairs.obj;mergeKLists.obj;generateParenthesis.obj;mergeTwoLists.obj;isValid.obj;removeNthFromEnd.obj;fourSum.obj;letterCombinations.obj;threeSumClosest;threeSum.obj;longestCommonPrefix.obj;romanToInt.obj;intToRoman.obj;maxArea.obj;isMatch.obj;isPalindrome.obj;myAtoi.obj;reverse.obj;convert.obj;longestPalindrome.obj;findMedianSortedArrays.obj;lengthOfLongestSubstring.obj;addTwoNumbers.obj;twoSum.obj;ListNode.obj;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
@@ -129,7 +129,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <AdditionalLibraryDirectories>$(SolutionDir)bin\Problems\intermediates\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(VCInstallDir)UnitTest\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>swapPairs.obj;mergeKLists.obj;generateParenthesis.obj;mergeTwoLists.obj;isValid.obj;removeNthFromEnd.obj;fourSum.obj;letterCombinations.obj;threeSumClosest;threeSum.obj;longestCommonPrefix.obj;romanToInt.obj;intToRoman.obj;maxArea.obj;isMatch.obj;isPalindrome.obj;myAtoi.obj;reverse.obj;convert.obj;longestPalindrome.obj;findMedianSortedArrays.obj;lengthOfLongestSubstring.obj;addTwoNumbers.obj;twoSum.obj;ListNode.obj;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>findSubstring.obj;divide.obj;strStr.obj;removeElement.obj;removeDuplicates.obj;reverseKGroup.obj;swapPairs.obj;mergeKLists.obj;generateParenthesis.obj;mergeTwoLists.obj;isValid.obj;removeNthFromEnd.obj;fourSum.obj;letterCombinations.obj;threeSumClosest;threeSum.obj;longestCommonPrefix.obj;romanToInt.obj;intToRoman.obj;maxArea.obj;isMatch.obj;isPalindrome.obj;myAtoi.obj;reverse.obj;convert.obj;longestPalindrome.obj;findMedianSortedArrays.obj;lengthOfLongestSubstring.obj;addTwoNumbers.obj;twoSum.obj;ListNode.obj;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
@@ -153,7 +153,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>$(SolutionDir)bin\Problems\intermediates\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(VCInstallDir)UnitTest\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>removeDuplicates.obj;reverseKGroup.obj;swapPairs.obj;mergeKLists.obj;generateParenthesis.obj;mergeTwoLists.obj;isValid.obj;removeNthFromEnd.obj;fourSum.obj;letterCombinations.obj;threeSumClosest;threeSum.obj;longestCommonPrefix.obj;romanToInt.obj;intToRoman.obj;maxArea.obj;isMatch.obj;isPalindrome.obj;myAtoi.obj;reverse.obj;convert.obj;longestPalindrome.obj;findMedianSortedArrays.obj;lengthOfLongestSubstring.obj;addTwoNumbers.obj;twoSum.obj;ListNode.obj;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>findSubstring.obj;divide.obj;strStr.obj;removeElement.obj;removeDuplicates.obj;reverseKGroup.obj;swapPairs.obj;mergeKLists.obj;generateParenthesis.obj;mergeTwoLists.obj;isValid.obj;removeNthFromEnd.obj;fourSum.obj;letterCombinations.obj;threeSumClosest;threeSum.obj;longestCommonPrefix.obj;romanToInt.obj;intToRoman.obj;maxArea.obj;isMatch.obj;isPalindrome.obj;myAtoi.obj;reverse.obj;convert.obj;longestPalindrome.obj;findMedianSortedArrays.obj;lengthOfLongestSubstring.obj;addTwoNumbers.obj;twoSum.obj;ListNode.obj;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
@@ -177,7 +177,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>$(SolutionDir)bin\Problems\intermediates\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(VCInstallDir)UnitTest\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>swapPairs.obj;mergeKLists.obj;generateParenthesis.obj;mergeTwoLists.obj;isValid.obj;removeNthFromEnd.obj;fourSum.obj;letterCombinations.obj;threeSumClosest;threeSum.obj;longestCommonPrefix.obj;romanToInt.obj;intToRoman.obj;maxArea.obj;isMatch.obj;isPalindrome.obj;myAtoi.obj;reverse.obj;convert.obj;longestPalindrome.obj;findMedianSortedArrays.obj;lengthOfLongestSubstring.obj;addTwoNumbers.obj;twoSum.obj;ListNode.obj;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>findSubstring.obj;divide.obj;strStr.obj;removeElement.obj;removeDuplicates.obj;reverseKGroup.obj;swapPairs.obj;mergeKLists.obj;generateParenthesis.obj;mergeTwoLists.obj;isValid.obj;removeNthFromEnd.obj;fourSum.obj;letterCombinations.obj;threeSumClosest;threeSum.obj;longestCommonPrefix.obj;romanToInt.obj;intToRoman.obj;maxArea.obj;isMatch.obj;isPalindrome.obj;myAtoi.obj;reverse.obj;convert.obj;longestPalindrome.obj;findMedianSortedArrays.obj;lengthOfLongestSubstring.obj;addTwoNumbers.obj;twoSum.obj;ListNode.obj;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
@@ -186,7 +186,16 @@
   <ItemGroup>
     <ClCompile Include="Easy\0001\twoSumTest.cpp" />
     <ClCompile Include="Easy\0026\removeDuplicatesTest.cpp" />
+    <ClCompile Include="Easy\0027\removeElementTest.cpp" />
+    <ClCompile Include="Easy\0028\strStrTest.cpp" />
+    <ClCompile Include="Easy\0035\searchInsertTest.cpp" />
     <ClCompile Include="Hard\0025\reverseKGroupTest.cpp" />
+    <ClCompile Include="Hard\0030\findSubstringTest.cpp" />
+    <ClCompile Include="Hard\0032\longestValidParenthesesTest.cpp" />
+    <ClCompile Include="Hard\0037\solveSudokuTest.cpp" />
+    <ClCompile Include="Hard\0041\firstMissingPositiveTest.cpp" />
+    <ClCompile Include="Hard\0042\trapTest.cpp" />
+    <ClCompile Include="Hard\0044\isWildcardMatchTest.cpp" />
     <ClCompile Include="Medium\0002\addTwoNumbersTest.cpp" />
     <ClCompile Include="Medium\0003\lengthOfLongestSubstringTest.cpp" />
     <ClCompile Include="Hard\0004\findMedianSortedArraysTest.cpp" />
@@ -210,6 +219,21 @@
     <ClCompile Include="Medium\0022\generateParenthesisTest.cpp" />
     <ClCompile Include="Hard\0023\mergeKListsTest.cpp" />
     <ClCompile Include="Medium\0024\swapPairsTest.cpp" />
+    <ClCompile Include="Medium\0029\divideTest.cpp" />
+    <ClCompile Include="Medium\0031\nextPermutationTest.cpp" />
+    <ClCompile Include="Medium\0033\searchTest.cpp" />
+    <ClCompile Include="Medium\0034\searchRangeTest.cpp" />
+    <ClCompile Include="Medium\0036\isValidSudokuTest.cpp" />
+    <ClCompile Include="Medium\0038\countAndSayTest.cpp" />
+    <ClCompile Include="Medium\0039\combinationSumTest.cpp" />
+    <ClCompile Include="Medium\0040\combinationSum2Test.cpp" />
+    <ClCompile Include="Medium\0043\multiplyTest.cpp" />
+    <ClCompile Include="Medium\0045\jumpTest.cpp" />
+    <ClCompile Include="Medium\0046\permuteTest.cpp" />
+    <ClCompile Include="Medium\0047\permuteUniqueTest.cpp" />
+    <ClCompile Include="Medium\0048\rotateTest.cpp" />
+    <ClCompile Include="Medium\0049\groupAnagramsTest.cpp" />
+    <ClCompile Include="Medium\0050\myPowTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -8,7 +8,7 @@ Runtime: 3 ms, faster than 45.40% of C++ online submissions for Valid Parenthese
 Memory Usage: 6.60 MB, less than 74.18% of C++ online submissions for Valid Parentheses.
 */
 
-bool Solution::isValid(const std::string& s)
+bool Solution::isValid(std::string s)
 {
    std::string p;
    for (char c : s)
