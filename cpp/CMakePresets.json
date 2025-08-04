@@ -1,0 +1,65 @@
+{
+   "version": 3,
+   "configurePresets": [
+      {
+         "name": "msvc-x64",
+         "displayName": "Visual Studio 2022 x64",
+         "description": "MSVC x64 Configuration",
+         "generator": "Visual Studio 17 2022",
+         "architecture": "x64",
+         "toolset": "host=x64",
+         "binaryDir": "${sourceDir}/build/${presetName}",
+         "toolchainFile": "${sourceDir}/vcpkg/scripts/buildsystems/vcpkg.cmake"
+      },
+      {
+         "name": "gcc-linux-x86_64-debug",
+         "displayName": "g++ Linux x86_64 Debug",
+         "description": "g++ Linux x86_64 Debug Configuration",
+         "generator": "Unix Makefiles",
+         "binaryDir": "${sourceDir}/build/${presetName}",
+         "toolchainFile": "${sourceDir}/vcpkg/scripts/buildsystems/vcpkg.cmake",
+         "cacheVariables": {
+         "CMAKE_BUILD_TYPE": "Debug",
+         "CMAKE_C_COMPILER": "/usr/bin/gcc",
+         "CMAKE_CXX_COMPILER": "/usr/bin/g++"
+         }
+      },
+      {
+         "name": "gcc-linux-x86_64-release",
+         "displayName": "g++ Linux x86_64 Release",
+         "description": "g++ Linux x86_64 Release Configuration",
+         "generator": "Unix Makefiles",
+         "binaryDir": "${sourceDir}/build/${presetName}",
+         "toolchainFile": "${sourceDir}/vcpkg/scripts/buildsystems/vcpkg.cmake",
+         "cacheVariables": {
+            "CMAKE_BUILD_TYPE": "Release",
+            "CMAKE_C_COMPILER": "/usr/bin/gcc",
+            "CMAKE_CXX_COMPILER": "/usr/bin/g++"
+         }
+      }
+   ],
+   "buildPresets": [
+      {
+         "name": "msvc-x64-release",
+         "configurePreset": "msvc-x64",
+         "description": "Build MSVC x64 Release",
+         "configuration": "Release"
+      },
+      {
+         "name": "msvc-x64-debug",
+         "configurePreset": "msvc-x64",
+         "description": "Build MSVC x64 Debug",
+         "configuration": "Debug"
+      },
+      {
+         "name": "gcc-linux-x86_64-release",
+         "configurePreset": "gcc-linux-x86_64-release",
+         "description": "Build g++ Linux x86_64 Release"
+      },
+      {
+         "name": "gcc-linux-x86_64-debug",
+         "configurePreset": "gcc-linux-x86_64-debug",
+         "description": "Build g++ Linux x86_64 Debug"
+      }
+   ]
+}
