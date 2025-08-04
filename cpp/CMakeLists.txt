@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.6..3.28)
+cmake_minimum_required(VERSION 3.16)
 
 project(leetcode_cpp
    VERSION 0.1.0
@@ -14,11 +14,18 @@ set(HEADERS
    )
 
 set(SOURCES
+   src/two_sum.cpp
    )
 
+enable_testing()
+
+find_package(GTest CONFIG REQUIRED)
 
 include(cmake/UpdateSubmodules.cmake)
 
-add_library(STATIC leetcode_cpp ${HEADERS} ${SOURCES})
+add_executable(leetcode_cpp ${HEADERS} ${SOURCES})
 
-add_subdirectory(backend)
+target_link_libraries(leetcode_cpp PRIVATE GTest::gtest_main)
+
+include(GoogleTest)
+gtest_discover_tests(leetcode_cpp)
